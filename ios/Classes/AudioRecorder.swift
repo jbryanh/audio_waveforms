@@ -25,7 +25,7 @@ public class AudioRecorder: NSObject, AVAudioRecorderDelegate{
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
         
-        let options: AVAudioSession.CategoryOptions = [.defaultToSpeaker, .allowBluetooth]
+        let options: AVAudioSession.CategoryOptions = [.allowBluetoothA2DP]
         if (path == nil) {
             let directory = NSTemporaryDirectory()
             let date = Date()
